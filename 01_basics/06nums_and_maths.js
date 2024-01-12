@@ -26,7 +26,7 @@ const hundreds =1000000
 // console.log(Math.min(4,5,6,3,7,1,3))
 // console.log(Math.max(54,12,32,5,897))
 
-console.log(Math.random()) // it always give value in between 0 and 1 including both
+console.log(Math.random()) // it always give value in between 0 and 1 including 0
 console.log((Math.random()*10)+1)
 console.log(Math.floor(Math.random()*10)+1)
 
