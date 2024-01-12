@@ -37,6 +37,9 @@ const bigNumber=4545444444444444444465656556n;
 //Array, Objects, Functions
 
 const heros=["shaktiman","naagraj","doga"];
+
+console.log(typeof heros)
+console.log(heros)
  
 let myObject={
     name: "anupam",
@@ -50,3 +53,32 @@ const myFunction = function(){
 }
 // console.log(myFunction)
 // console.log(typeof myFunction) // it returns function but it actually objects function
+
+/*==============================================================*/
+
+// primitive stored in stack and non primitive stored on heap 
+
+let myyoutube="hiteshchaudharidotcom"
+
+
+console.log(myyoutube)
+
+let anothername=myyoutube
+
+ anothername="chaiaurcode"
+
+console.log(anothername)
+
+let userone={
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+let usertwo=userone
+console.log(userone)
+console.log(usertwo)
+
+usertwo.email="anupamzope@gmail.com"
+
+console.log(userone)
+console.log(usertwo)
+
