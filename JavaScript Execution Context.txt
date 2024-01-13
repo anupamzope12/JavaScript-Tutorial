@@ -1,0 +1,52 @@
+ Javascript code will be executed in two phases whenever we try to run a javascript program. And in the first phase, the JS engine skims through all the code and assigns memory to all the variables and functions(functions definitions only not the functions expressions or arrow functions) inside the code. In the second phase, the JS engine starts interpreting the code line by line and it moves to the next line of execution when it is done with the current line as javascript is synchronous. In the first phase, code gets compiled and the same code gets interpreted in the second phase of execution.
+The first phase(memory creation phase) and the second phase(code execution phase) of javascript code execution will be done inside the execution context and this execution context gets created when we run the program.
+No alt text provided for this image
+When we try to run the above program, At first, an execution context will be created and memory will be allocated for all the variables ( personName, age) and functions definitions(isEligibleToVote). Whenever memory is allocated to these variables, the javascript engine assigns undefined as a placeholder value for all of those variables & assigns all the functional code to the function name. 
+No alt text provided for this image
+This is the reason why we can access variables & functions (functions definitions) before encountering their actual declarations. Let us see this in action. In the below example, we are trying to print(console.log) the variables(personName, age) before their actual declarations. But still, we can access them unlike in any other programming language because those variables were already available (this availability is also known as Hoisting) in the execution context's memory component but their value is undefined because the 2nd phase of execution didn't execute the line corresponding to those variables yet.
+
+
+
+No alt text provided for this image
+Now, let us understand the second phase of code execution where the javascript code gets executed line by line in the execution context by the call stack & variables present in the memory component will be initialised with the corresponding values provided in the code. The below snippet shows the state of the memory component when line number 1 of the code gets executed by the call stack. Here variable's(personName) value gets initialised in the memory component.
+No alt text provided for this image
+And the same way when control goes to line number 2 of the code & when it gets executed, the corresponding variable(age) gets initialized with the value 22. 
+
+
+No alt text provided for this image
+Now if we try to print(console.log) the variables after line number 5, we can able to see their values getting reflected in the console as those were already initialised in the execution context.
+No alt text provided for this image
+In the same way, we can invoke the function before its declaration. 
+No alt text provided for this image
+So, this is how javascript code gets executed in the execution context by the call stack in two phases. Where the first phase allocates memory to variables and functions & in the second phase actual code gets executed line by line.
+Please reach out to Siva Rajana in case of any doubts or suggestions.
+Thanks for reading.
+Happy Coding!!
+
+--------------------------------OR---------------------------------------
+
+➡Creation of the Global Execution Context:
+When a JavaScript program starts running, it creates the global execution context. This context consists of two phases: the memory phase and the execution phase.
+
+➡Memory Phase:
+During the creation phase, the JavaScript engine sets up the global object (which is the window object in a browser environment), the 'this' keyword, and the outer environment reference.
+It also scans through the code and sets up memory space for variables and functions through a process called "hoisting." Variables are set to undefined, and functions are stored in their entirety.
+
+➡Execution Phase:
+After the creation phase, the execution phase begins. This is where the actual code is executed line by line.
+
+➡Function Execution:
+When a function is called, a new execution context is created for that function. This includes its own memory space for variables and parameters.
+The function goes through its own creation and execution phases.
+After the function finishes executing, its execution context is popped off the call stack.
+
+➡Call Stack:
+The call stack is a data structure that keeps track of the execution context of the program. It follows the Last In, First Out (LIFO) principle.
+As functions are called, their execution contexts are added to the top of the call stack.
+When a function completes its execution, its context is removed from the top of the call stack.
+
+➡Global Execution Completion:
+Once the global execution context completes, the program finishes its execution.
+
+📝Note:  the returned value being passed to the global environment, it's more accurate to say that the returned value is passed to the calling context. If a function is called within another function, the returned value is typically used in the context of the calling function.
+
