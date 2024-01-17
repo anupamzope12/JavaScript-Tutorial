@@ -28,7 +28,7 @@ const JsUser={
 // console.log(JsUser["full Name"])
 // console.log(JsUser.mySym)
 // console.log(JsUser["mySym"])
-
+// console.log()
 // console.log( typeof JsUser.age)
 // console.log( typeof JsUser["email"])
 // console.log(typeof JsUser.fullName)
@@ -44,14 +44,15 @@ const JsUser={
 JsUser.email="hitesh@chatgpt.com"
 Object.freeze(JsUser)
 JsUser.email="hitesh@microsoft.com"
- console.log(JsUser)
+//  console.log(JsUser)
 
-// JsUser.greeting = function(){
-//     console.log("Hello js user");
-// }
+JsUser.greeting = function(){
+    console.log("Hello js user");
+}
 
-// JsUser.greetingTwo = function(){
-//     console.log(`Hello js user , ${this.name}`);
-// }
+JsUser.greetingTwo = function(){
+    console.log(`Hello js user , ${this.name}`);
+}
+console.log(JsUser.greeting())
 // console.log(JsUser.greeting());
 // console.log(JsUser.greetingTwo());
