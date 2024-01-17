@@ -3,17 +3,17 @@ const score=400;
 
 const balance=new Number(100)
 // console.log(balance)
+const balance1=balance.toString()
+// console.log(balance1) 
+console.log(balance.toString().length)
+console.log(balance.toFixed(2))
 
-// console.log(balance.toString) 
-// console.log(balance.toString().length)
-// console.log(balance.toFixed(1))
-
-const otherNumber=123.896
-// console.log(otherNumber.toPrecision(5))
+const otherNumber23=123.896
+console.log(otherNumber23.toPrecision(5))
 
 const hundreds =1000000
-// console.log(hundreds.toLocaleString());
-// console.log(hundreds.toLocaleString('en-IN'));
+console.log(hundreds.toLocaleString());
+console.log(hundreds.toLocaleString('en-IN'));
 
 //++++++++++++++++++++++++++ Maths ++++++++++++++++++++++
 
@@ -26,11 +26,11 @@ const hundreds =1000000
 // console.log(Math.min(4,5,6,3,7,1,3))
 // console.log(Math.max(54,12,32,5,897))
 
-console.log(Math.random()) // it always give value in between 0 and 1 including 0
-console.log((Math.random()*10)+1)
-console.log(Math.floor(Math.random()*10)+1)
+// console.log(Math.random()) // it always give value in between 0 and 1 including 0
+// console.log((Math.random()*10)+1)
+// console.log(Math.floor(Math.random()*10)+1)
 
 const min=10
 const max=20
 
-console.log(Math.floor(Math.random() * (max-min + 1 ))+min)
+// console.log(Math.floor(Math.random() * (max-min + 1 ))+min)

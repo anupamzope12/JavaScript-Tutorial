@@ -54,12 +54,11 @@ const myFunction = function(){
 // console.log(myFunction)
 // console.log(typeof myFunction) // it returns function but it actually objects function
 
-/*==============================================================*/
+/* ========================================================================================== */
 
 // primitive stored in stack and non primitive stored on heap 
 
 let myyoutube="hiteshchaudharidotcom"
-
 
 console.log(myyoutube)
 
@@ -81,4 +80,3 @@ usertwo.email="anupamzope@gmail.com"
 
 console.log(userone)
 console.log(usertwo)
-

@@ -21,7 +21,10 @@ let b=455
 console.log(b)
 // console.log(l)
 
+var z=5666666666666666556556n ;
 
+let mySym=Symbol("adad")
+console.log(typeof mySym)
 //var is not used in java script
 // because of scope issue and functional issue
 

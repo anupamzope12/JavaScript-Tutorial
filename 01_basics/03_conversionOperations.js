@@ -1,7 +1,7 @@
 let score=undefined;
 
 // console.log(typeof score)
-// console.log(typeof(score))
+// console.log(typeof (score))
 
 let valueInNumber=Number(score)
 
@@ -16,9 +16,10 @@ let isloggedIn=0
 
 let booleanloggedIn=Boolean(isloggedIn)
 
-// console.log(isloggedIn)
-// console.log(typeof booleanloggedIn )
-// console.log(booleanloggedIn)
+// console.log(isloggedIn) //0
+// console.log(typeof isloggedIn) //number
+// console.log(typeof booleanloggedIn ) //boolean
+// console.log(booleanloggedIn) //flase
 
 // 1=> true ; 0=>false
 //"" =>false
@@ -74,4 +75,4 @@ num1=num2=num3=2*2
 
 let gameCounter=100
 ++gameCounter
-console.log(gameCounter)
+// console.log(gameCounter)
